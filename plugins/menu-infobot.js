@@ -16,7 +16,7 @@ const defaultMenu = {
   header: '╭─────≼ %category ≽',
   body: '╎≡ %cmd',
   footer: '╰┄┄┄┄┄┄┄┄┄┄┄┄┄〢',
-  after: 'BOBIZA 👑',
+  after: 'YASSEN 👑',
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
@@ -91,12 +91,12 @@ let tags = {
     let mpt = clockString(_mpt)
     let usrs = db.data.users[m.sender]
       
-    let wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
-    let wibh = moment.tz('Asia/Jakarta').format('HH')
-    let wibm = moment.tz('Asia/Jakarta').format('mm')
-    let wibs = moment.tz('Asia/Jakarta').format('ss')
-    let wit = moment.tz('Asia/Jayapura').format('HH:mm:ss')
-    let wita = moment.tz('Asia/Makassar').format('HH:mm:ss')
+    let wib = moment.tz('Africa/Cairo').format('HH:mm:ss')
+    let wibh = moment.tz('Africa/Cairo').format('HH')
+    let wibm = moment.tz('Africa/Cairo').format('mm')
+    let wibs = moment.tz('Africa/Cairo').format('ss')
+    let wit = moment.tz('Africa/Cairo').format('HH:mm:ss')
+    let wita = moment.tz('Africa/Cairo').format('HH:mm:ss')
     let wktuwib = `${wibh} H ${wibm} M ${wibs} S`
  
     let mode = global.opts['self'] ? 'Private' : 'Publik'
@@ -179,8 +179,8 @@ let tags = {
 	externalAdReply: {
 	title: 'قسم خاص معلومات عن البوت',
 	body: 'اليك الاوامر الخاصة بهذا القسم',
-	thumbnailUrl: 'https://telegra.ph/file/22455a32e324068fa1922.jpg',
-	sourceUrl: 'instagram.com/noureddine_ouafy',
+	thumbnailUrl: 'https://telegra.ph/file/285545509ca7337a64b11.jpg',
+	sourceUrl: 'https://www.tiktok.com/@b__v_',
 	mediaType: 1,
 	renderLargerThumbnail: true
 	}}})
@@ -217,7 +217,7 @@ function clockStringP(ms) {
   return [ye, ' *Years 🗓️*\n',  mo, ' *Month 🌙*\n', d, ' *Days ☀️*\n', h, ' *Hours 🕐*\n', m, ' *Minute ⏰*\n', s, ' *Second ⏱️*'].map(v => v.toString().padStart(2, 0)).join('')
 }
 function ucapan() {
-  const time = moment.tz('Asia/Jakarta').format('HH')
+  const time = moment.tz('Africa/Cairo').format('HH')
   let res = "Kok Belum Tidur Kak? 🥱"
   if (time >= 4) {
     res = "Pagi Kak 🌄"
